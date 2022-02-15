@@ -1,0 +1,15 @@
+.logo {
+  text-decoration: none;
+  font-family: 'raleway', bold;
+  font-size: 26px;
+  line-height: 1.19;
+  font-style: unset;
+  color: var(--accent-colour);
+}
+
+.logo--black {
+  color: #000000;
+}
+.logo--white {
+  color: var(--main-bg-colour);
+}
