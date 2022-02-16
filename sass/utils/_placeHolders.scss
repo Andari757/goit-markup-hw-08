@@ -1,3 +1,4 @@
+@import './breakePoints';
 %flex {
   display: flex;
   align-items: center;
@@ -29,9 +30,14 @@
 %section-title {
   @extend %title;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 30px;
+  @include desktop {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 %litteral-cta {
   display: inline-block;
@@ -57,4 +63,10 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+}
+%section-paddings {
+  padding: 60px 0;
+  @include desktop {
+    padding: 94px 0;
+  }
 }

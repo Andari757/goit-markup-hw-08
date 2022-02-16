@@ -57,6 +57,14 @@
             </a>
           </li>
         </ul>
+        <button data-menu-button  aria-label="Переключатель мобильного меню" type="button" class="header__menu-button " aria-controls="menu" aria-expanded="false">
+          <svg width="40px" height="40px">
+            <use class="header__icon-x" href="./images/icons.svg#icon-close"></use>
+            <use class="header__icon-menu" href="./images/icons.svg#icon-menu"></useicon-menu_24px>
+          </svg>
+        </button>
+        <div data-menu class="header__menu" id="menu "></div data-menu>
+          
       </div>
     </header>
     <main>
@@ -392,7 +400,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__wrapper">
-        <div>
+        <div class="footer__contact-wrapper">
           <a lang="en" class="logo" href="./index.html"
             >Web<span class="logo--white">Studio</span></a
           >
@@ -507,7 +515,7 @@
             <label class="modal__license-text" for="agree"
               >Соглашаюсь с рассылкой и принимаю
               <a class="modal__link" href="">Условия договора</a>
-
+              
               <svg class="modal__checkbox-icon" width="16" height="15">
                 <use width="11.3" href="./images/icons.svg#icon-4aika"></use>
               </svg>
@@ -518,5 +526,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
