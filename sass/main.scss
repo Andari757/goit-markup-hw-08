@@ -10,11 +10,13 @@
 @import './utils/placeHolders';
 @import './utils/variables';
 @import './utils/breakePoints';
+@import './components/header-phone.scss';
 @import './components/header';
 @import './components/logo';
 @import './components/socials';
 @import './components/modal';
 @import './components/footer';
+
 .page {
   background-color: var(--main-bg-colour);
   color: var(--main-text-colour);
@@ -22,8 +24,19 @@
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+.overflow {
+  overflow: hidden;
+}
+.header {
+  height: 60px;
+  border-bottom: 1px solid #ececec;
+  @include tablet {
+    height: 80px;
+  }
+}
 .img {
   display: block;
+  max-width: 100%;
 }
 .container {
   padding-left: 15px;
@@ -46,7 +59,15 @@
   max-width: 1600px;
   padding: 118px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg);
+    url(../images/mobile/hero-480@1x.jpg);
+  @include tablet {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/tablet/hero-768@1x.jpg);
+  }
+  @include desktop {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/tablet/hero-768@1x.jpg);
+  }
   background-color: var(--hero-footer-colour);
   background-repeat: no-repeat;
   background-position: center;
@@ -160,6 +181,7 @@
   text-transform: uppercase;
   color: var(--main-bg-colour);
 }
+
 .team {
   @extend %section-paddings;
   background-color: var(--second-bg-colour);
@@ -179,6 +201,13 @@
     }
   }
   &__card {
+    width: calc((100% - 1 * 30px) / 1);
+    @include tablet {
+      width: calc((100% - 2 * 30px) / 2);
+    }
+    @include desktop {
+      width: calc((100% - 4 * 30px) / 4);
+    }
     margin: 15px;
     background: var(--main-bg-colour);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -303,6 +332,7 @@
   }
 }
 .portfolio__gallery {
+  justify-content: center;
   @extend %list;
 
   margin: -15px;
@@ -345,7 +375,7 @@
 .portfolio__project-desc {
   position: absolute;
   bottom: -294px;
-  width: 370px;
+  width: 100%;
   height: 294px;
   background: var(--accent-colour);
   opacity: 0.9;

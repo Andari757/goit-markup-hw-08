@@ -18,29 +18,31 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="page">
+  <body data-body class="page">
     <header class="header">
-      <div class="container header__container">
+      <div class="header__phone">
+        <a lang="en" href="./index.html" class="header__logo logo">Web<span class="logo--black">Studio</span></a>
+      <div data-menu class="header__menu" id="menu ">
+      <div class="container header__container">  
         <nav class="header__nav">
-          <a lang="en" href="./index.html" class="logo"
-            >Web<span class="logo--black">Studio</span></a
-          >
+                    
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a class="header__nav-link link header__nav-link--current" href="./index.html"
+              <a class="header__nav-link link header__nav-link--current " href="./index.html"
                 >Студия</a
               >
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link link" href="./portfolio.html">Портфолио</a>
+              <a class="header__nav-link link " href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header__nav-contacts">
-          <li class="header__nav-item">
+        <div class="header__menu-bottom">
+          <ul class="header__nav-contacts">
+          <li class="header__contact">
             <a class="header__contacts-link link" href="mailto:info@devstudio.com">
               <svg class="header__icon-mail">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -48,7 +50,7 @@
               <span>info@devstudio.com</span>
             </a>
           </li>
-          <li class="header__nav--item">
+          <li class="header__contact">
             <a class="header__contacts-link link" href="tel:+380961111111">
               <svg class="header__icon-phone">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -57,15 +59,60 @@
             </a>
           </li>
         </ul>
-        <button data-menu-button  aria-label="Переключатель мобильного меню" type="button" class="header__menu-button " aria-controls="menu" aria-expanded="false">
+        <ul class="header__social">
+          <li class="header__social-item"><a class="header__social-link" href="">Instagram</a></li>
+          <li class="header__social-item"><a class="header__social-link" href="">Twitter</a></li>
+          <li class="header__social-item"><a class="header__social-link" href="">Facebook</a></li>
+          <li class="header__social-item"><a class="header__social-link" href="">Linkedin</a></li>
+        </ul>
+        </div>
+      </div>
+      </div> 
+      <button data-menu-button  aria-label="Переключатель мобильного меню" type="button" class="header__menu-button " aria-controls="menu" aria-expanded="false">
           <svg width="40px" height="40px">
             <use class="header__icon-x" href="./images/icons.svg#icon-close"></use>
             <use class="header__icon-menu" href="./images/icons.svg#icon-menu"></useicon-menu_24px>
           </svg>
         </button>
-        <div data-menu class="header__menu" id="menu "></div data-menu>
-          
       </div>
+      <div class="tablet"><div class="container header__container">
+        <nav class="header__nav">
+          <a lang="en" href="./index.html" class="logo"
+            >Web<span class="logo--black">Studio</span></a
+          >
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link link header__nav-link--current " href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link " href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__nav-contacts">
+          <li class="header__contact">
+            <a class="header__contacts-link link" href="mailto:info@devstudio.com">
+              <svg class="header__icon-mail">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
+          <li class="header__contact">
+            <a class="header__contacts-link link" href="tel:+380961111111">
+              <svg class="header__icon-phone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <span>+38 096 111 11 11</span>
+            </a>
+          </li>
+        </ul>
+      </div></div>
     </header>
     <main>
       <section class="hero">
@@ -138,7 +185,9 @@
               <div class="skills__desc">десктопные приложения</div>
               <img
                 class="img"
-                src="./images/whatarewe1.jpg"
+                srcset="./images/desktop/whattodo-1-1200@1x.jpg 1x,
+                ./images/desktop/whattodo-1-1200@2x.jpg 2x"
+                src="./images/desktop/whattodo-1-1200@1x.jpg"
                 alt="разработка десктопных приложений"
                 width="370"
                 height="294"
@@ -148,7 +197,9 @@
               <div class="skills__desc">Мобильные приложения</div>
               <img
                 class="img"
-                src="./images/whatarewe2.jpg"
+                srcset="./images/desktop/whattodo-2-1200@1x.jpg 1x,
+                ./images/desktop/whattodo-2-1200@2x.jpg 2x"
+                src="./images/desktop/whattodo-2-1200@1x.jpg"
                 alt="разработка мобильных приложений"
                 width="370"
                 height="294"
@@ -158,7 +209,9 @@
               <div class="skills__desc">Дизайнерские решения</div>
               <img
                 class="img"
-                src="./images/whatarewe3.jpg"
+                srcset="./images/desktop/whattodo-3-1200@1x.jpg 1x,
+                ./images/desktop/whattodo-3-1200@2x.jpg 2x"
+                src="./images/desktop/whattodo-3-1200@1x.jpg"
                 alt="разработока дизайнерских приложений"
                 width="370"
                 height="294"
@@ -174,10 +227,16 @@
             <li class="team__card">
               <img
                 class="img"
-                src="./images/igor(1).jpg"
+                srcset="./images/mobile/team-1-480@2x.jpg  900w,
+                ./images/mobile/team-1-480@1x.jpg  450w,
+                ./images/tablet/team-1-768@2x.jpg  708w,
+                ./images/tablet/team-1-768@1x.jpg  354w,
+                ./images/desktop/team-1-1200@1x.jpg  270w,
+                ./images/desktop/team-1-1200@2x.jpg  540w"
+                sizes="(min-width: 1200px) 270px,(min-width: 768px) 354px, (min-width: 120px) 450px, 100vw"
+                src="images/desktop/team-1-1200@1x.jpg"
                 alt="фотография разработчика"
-                width="270"
-                height="260"
+                
               />
               <div class="team__card-box">
                 <h3 class="team__dev-name">Игорь Демьяненко</h3>
@@ -219,10 +278,16 @@
             <li class="team__card">
               <img
                 class="img"
-                src="./images/olga(1).jpg"
+                srcset="./images/mobile/team-2-480@2x.jpg  900w,
+                ./images/mobile/team-2-480@1x.jpg  450w,
+                ./images/tablet/team-2-768@2x.jpg  708w,
+                ./images/tablet/team-2-768@1x.jpg  354w,
+                ./images/desktop/team-2-1200@1x.jpg  270w,
+                ./images/desktop/team-2-1200@2x.jpg  540w"
+                sizes="(min-width: 1200px) 270px,(min-width: 768px) 354px, (min-width: 120px) 450px, 100vw"
+                src="images/desktop/team-2-1200@1x.jpg"
                 alt="фотография разработчика"
-                width="270"
-                height="260"
+                
               />
               <div class="team__card-box">
                 <h3 class="team__dev-name">Ольга Репина</h3>
@@ -262,10 +327,16 @@
             <li class="team__card">
               <img
                 class="img"
-                src="./images/nikolay(1).jpg"
+                srcset="./images/mobile/team-3-480@2x.jpg  900w,
+                ./images/mobile/team-3-480@1x.jpg  450w,
+                ./images/tablet/team-3-768@2x.jpg  708w,
+                ./images/tablet/team-3-768@1x.jpg  354w,
+                ./images/desktop/team-3-1200@1x.jpg  270w,
+                ./images/desktop/team-3-1200@2x.jpg  540w"
+                sizes="(min-width: 1200px) 270px,(min-width: 768px) 354px, (min-width: 120px) 450px, 100vw"
+                src="images/desktop/team-3-1200@1x.jpg"
                 alt="фотография разработчика"
-                width="270"
-                height="260"
+                
               />
               <div class="team__card-box">
                 <h3 class="team__dev-name">Николай Тарасов</h3>
@@ -305,10 +376,16 @@
             <li class="team__card">
               <img
                 class="img"
-                src="./images/michail(1).jpg"
+                srcset="./images/mobile/team-4-480@2x.jpg  900w,
+                ./images/mobile/team-4-480@1x.jpg  450w,
+                ./images/tablet/team-4-768@2x.jpg  708w,
+                ./images/tablet/team-4-768@1x.jpg  354w,
+                ./images/desktop/team-4-1200@1x.jpg  270w,
+                ./images/desktop/team-4-1200@2x.jpg  540w"
+                sizes="(min-width: 1200px) 270px,(min-width: 768px) 354px, (min-width: 120px) 450px, 100vw"
+                src="images/desktop/team-4-1200@1x.jpg"
                 alt="фотография разработчика"
-                width="270"
-                height="260"
+                
               />
               <div class="team__card-box">
                 <h3 class="team__dev-name">Михаил Ермаков</h3>

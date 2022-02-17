@@ -1,10 +1,13 @@
 .logo {
   text-decoration: none;
   font-family: 'raleway', bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   font-style: unset;
   color: var(--accent-colour);
+  @include desktop {
+    font-size: 26px;
+  }
 }
 
 .logo--black {

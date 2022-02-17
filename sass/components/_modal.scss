@@ -152,7 +152,7 @@ input::-webkit-inner-spin-button {
   }
 }
 .modal__license-text {
-  position: relative;
+  // position: relative;
   font-size: 12px;
   line-height: 1.17;
 
@@ -163,8 +163,8 @@ input::-webkit-inner-spin-button {
 }
 .modal__checkbox-icon {
   position: absolute;
-  bottom: 0;
-  left: -20px;
+  bottom: 4px;
+  left: 4px;
   fill: var(--main-bg-colour);
 }
 .modal__checkbox-bg {
