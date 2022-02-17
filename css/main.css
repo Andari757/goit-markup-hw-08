@@ -118,6 +118,13 @@
   }
 }
 
+.header__phone .header__wrapper {
+  position: relative;
+  max-width: 480px;
+  height: 100%;
+  margin: auto;
+}
+
 .header__phone .header__menu-button {
   position: absolute;
   top: 10px;
@@ -919,6 +926,7 @@ input::-webkit-inner-spin-button {
 
 .img {
   display: block;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -970,8 +978,8 @@ input::-webkit-inner-spin-button {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/hero-768@1x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-768@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/hero-1200@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero-1200@1x.jpg);
   }
 }
 
@@ -1230,7 +1238,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -8px -8px 25px -8px;
+  margin: -4px -4px 29px -4px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1238,7 +1246,7 @@ input::-webkit-inner-spin-button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
   }
 }
 
@@ -1247,12 +1255,12 @@ input::-webkit-inner-spin-button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 35px;
+    margin-bottom: 39px;
   }
 }
 
 .portfolio__filter {
-  margin: 8px 8px 15px 8px;
+  margin: 4px 4px 11px 4px;
 }
 
 .portfolio__filter-button {
@@ -1280,9 +1288,6 @@ input::-webkit-inner-spin-button {
 }
 
 .portfolio__gallery {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: -15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1291,7 +1296,16 @@ input::-webkit-inner-spin-button {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio__gallery {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .portfolio__card {
+  width: 100%;
   margin: 15px;
 }
 
@@ -1352,10 +1366,14 @@ input::-webkit-inner-spin-button {
 }
 
 .portfolio__desc-wrapper {
-  padding: 20px 0 20px 24px;
+  padding: 20px 24px 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+
+.portfolio__card:first-child .portfolio__desc-wrapper {
+  height: 147px;
 }
 
 .portfolio__project-name {

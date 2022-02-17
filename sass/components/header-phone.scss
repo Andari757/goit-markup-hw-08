@@ -2,6 +2,11 @@
   @include tablet {
     display: none;
   }
+  .header__wrapper {
+    position: absolute;
+    max-width: 480px;
+    margin: auto;
+  }
   .header__menu-button {
     position: absolute;
     top: 10px;
