@@ -119,9 +119,8 @@
 }
 
 .header__phone .header__wrapper {
-  position: relative;
+  position: absolute;
   max-width: 480px;
-  height: 100%;
   margin: auto;
 }
 
